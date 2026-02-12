@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "charset": "utf8",
+    "target": "ES2020",
+    "module": "ESNext",
+    "lib": [ "ES2020", "DOM", "DOM.Iterable" ],
+    "types": [],
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [ "src/**/*" ],
+  "exclude": [ "node_modules" ]
+}

@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Файловый менеджер в стиле Total Commander</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- ЛЕВАЯ ПАНЕЛЬ -->
+        <div class="panel" id="leftPanel">
+            <div class="panel-header">
+                <select id="leftPanelDrive" class="drive-select">
+                    <option value="">Загрузка...</option>
+                </select>
+                <input type="text" id="leftPanelPath" class="path-input" readonly placeholder="Путь...">
+                <button id="leftPanelParent" class="parent-btn" title="Родительская папка">..</button>
+            </div>
+            <div class="panel-content" id="leftPanelContent">
+                <div class="loading">Загрузка...</div>
+            </div>
+        </div>
+
+        <!-- ПРАВАЯ ПАНЕЛЬ -->
+        <div class="panel" id="rightPanel">
+            <div class="panel-header">
+                <select id="rightPanelDrive" class="drive-select">
+                    <option value="">Загрузка...</option>
+                </select>
+                <input type="text" id="rightPanelPath" class="path-input" readonly placeholder="Путь...">
+                <button id="rightPanelParent" class="parent-btn" title="Родительская папка">..</button>
+            </div>
+            <div class="panel-content" id="rightPanelContent">
+                <div class="loading">Загрузка...</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- КНОПКИ ДЕЙСТВИЙ -->
+    <div class="actions">
+        <button id="copyBtn" class="action-btn copy-btn" title="Копировать (F5)">
+            <span class="btn-icon">📋</span>
+            Скопировать
+        </button>
+        <button id="moveBtn" class="action-btn move-btn" title="Переместить (F6)">
+            <span class="btn-icon">⟷</span>
+            Переместить
+        </button>
+        <button id="deleteBtn" class="action-btn delete-btn" title="Удалить (F8)">
+            <span class="btn-icon">🗑️</span>
+            Удалить
+        </button>
+    </div>
+
+    <script type="module" src="dist/bundle.js" charset="UTF-8"></script>
+</body>
+</html>

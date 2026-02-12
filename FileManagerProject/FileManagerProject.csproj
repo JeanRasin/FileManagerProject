@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="FileManager.Web\dist\" />
+    <Folder Include="FileManager.Web\src\components\" />
+    <Folder Include="FileManager.Web\src\models\" />
+    <Folder Include="FileManager.Web\src\services\" />
+  </ItemGroup>
+
+</Project>
